@@ -64,3 +64,18 @@ ul.uiSideNav > li:nth-of-type(1n+3),#pagesNav {
   background:#4e69a2 !important;
   border-radius:0 !important;
 }
+
+/*Making the profile picture bigger*/
+._5bfg #pageNav .navLink, ._5bfg #pageNav .navItem .navLink {
+  margin-top: -7px !important;
+}
+._5bfg #pageNav._5bfj .tinyman .navLink:after, ._5bfg #pageNav._5bfj .tinyman .navLink:hover::after,._5bfg #pageNav._5bfj .tinyman .navLink:hover {
+  background-image:none !important;
+}
+.navItem.firstItem.tinyman.litestandNavItem > a {
+  background:transparent !important;
+}
+#pageNav._5bfj .tinyman .headerTinymanPhoto {
+  width: 30px !important;
+  height: 30px !important;
+}
