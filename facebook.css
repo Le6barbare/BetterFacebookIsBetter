@@ -27,6 +27,11 @@ div[data-ft*=ei] {
 body, ._5vb_, ._5vb_ #contentCol {
   background-color:white !important;
 }
+
+/*Preserve timeline background*/
+body.timelineLayout {
+  background-color: #e7ebf2 !important;
+}
  
 /*Flat top bar */
 .hasSmurfbar #blueBarHolder #blueBar {
@@ -62,4 +67,11 @@ ul.uiSideNav > li:nth-of-type(1n+3),#pagesNav {
 /*Adjust content after hiding the right column*/
 #globalContainer{
   padding-left: 115px !important;
+}
+
+
+/*Flat Post buttons*/
+._4jy1, ._4jy1._42fr:active, ._4jy1._42fr._42fs {
+  background:#4e69a2 !important;
+  border-radius:0 !important;
 }
