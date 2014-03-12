@@ -11,6 +11,10 @@ Use the Stylish extension for the browser you prefer.
 - Get the [Safari][4] extension.
 - Get the [Firefox][5] addon.
 
+And configure it with:
+>URL that begin with https://www.facebook.com
+>URL that begin with https://facebook.com
+
 ## Notes
 Feel free to send any questions or feedback to [damien.erambert@me.com][1] or find me on Twitter at @[Eramdam][2].
 
