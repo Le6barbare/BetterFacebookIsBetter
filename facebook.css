@@ -14,7 +14,7 @@ div#pagelet_ego_pane {
 }
 
 /* Removes the Home/Me/Find Friends menu in topbar */
-#navFindFriends, #pageNav > li.firstItem, #navHome {
+#navFindFriends, #pageNav > li.firstItem .headerTinymanName, #navHome {
   display:none !important;
 }
 
