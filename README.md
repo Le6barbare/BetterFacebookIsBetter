@@ -14,6 +14,7 @@ Use the Stylish extension for the browser you prefer.
 ## Notes
 Feel free to send any questions or feedback to [damien.erambert@me.com][1] or find me on Twitter at @[Eramdam][2].
 
+Thanks to [Connors](https://github.com/connors/facebook-user-style) for the inspiration !
 
 [1]: mailto:damien.erambert@me.com        "Email Damien Erambert"
 [2]: http://twitter.com/connors            "Damien Erambert on Twitter"
