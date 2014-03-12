@@ -2,7 +2,7 @@
 
 Because the "new" Facebook rolled out in 2014 is crappy, I felt the need to tweak it so it wasn't a danger for my eyes.
 
-![](screenshot.png)
+![](before-after.gif)
 
 ## Installation
 Use the Stylish extension for the browser you prefer.  
