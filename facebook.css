@@ -65,8 +65,14 @@ ul.uiSideNav > li:nth-of-type(1n+7),#pagesNav, #groupsNav {
 }
 
 /*Adjust content after hiding the right column*/
-#globalContainer{
+/* No longer needed because of the LARGE Content Area */
+/*#globalContainer{
   padding-left: 115px !important;
+}*/
+
+/* Full width content aera ! */
+html ._5vb_._5vb_.hasLeftCol .hasRightCol div#contentArea {
+  width: 99.4%;
 }
 
 /*Flat Post buttons*/
