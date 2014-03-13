@@ -54,9 +54,9 @@ body.timelineLayout {
   display:none !important;
 }
 
-/*Hide anything but News Feed and Messages in the sidbar */
-ul.uiSideNav > li:nth-of-type(1n+3),#pagesNav {
-          display: none !important;
+/*Hide anything but News Feed and Messages in the sidebar */
+ul.uiSideNav > li:nth-of-type(1n+7),#pagesNav, #groupsNav {
+  display: none !important;
 }
 
 /*Flat Post buttons*/
