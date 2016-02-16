@@ -10,11 +10,11 @@ div#pagelet_ego_pane {
 
 /* Hide useless stuff in the left sidebar */
 #appsNav, #listsNav, #interestsNav {
-  display:none !important;
+ display:none !important;
 }
 
 /* Removes the Home/Me/Find Friends menu in topbar */
-#navFindFriends, #pageNav > li.firstItem .headerTinymanName, #navHome {
+._2pdh, ._3zm- {
   display:none !important;
 }
 
@@ -33,35 +33,60 @@ body.timelineLayout {
   background-color: #e7ebf2 !important;
 }
  
-/*Flat top bar */
-.hasSmurfbar #blueBarHolder #blueBar {
-  background: #3c599b !important;
-}
-
 /* Flat badges */
 .jewelCount ._5ugg, .jewelCount ._3z_5, ._5q5b ._51jx {
   background: #dc0d17 !important;
   box-shadow: none !important;
+  border-bottom: 0 !important;
 }
 
-/*Blocky search bar*/
+/*Flat top bar */
+._hdd {
+  background-image:none !important;
+}
+
+/*Flat Inbox badge */
+._3z_5 {
+  -webkit-border-radius: 0 !important;
+  -webkit-box-shadow: none;
+}
+
+/*Banner buttons */
+.uiButtonGroup {
+  -webkit-border-radius: 0 !important;
+}
+  
+/*Flat profile Pic */
+._5bfg #pageNav._5bfj .tinyman .navLink:after, ._5bfg #pageNav._5bfj .tinyman .navLink:hover::after {
+  background-image:none !important;
+}
+
+/*Blocky search bar */
 ._585-[role="search"] {
   border-radius: 0 !important;
 }
 
 /* Hide your own name in sidebar */
-#pagelet_welcome_box {
+._2dpb {
   display:none !important;
 }
 
-/*Hide anything but News Feed and Messages in the sidebar */
-ul.uiSideNav > li:nth-of-type(1n+7),#pagesNav, #groupsNav {
+/*Hide anything but News Feed and Messages in the sidbar */
+ul.uiSideNav > li:nth-of-type(1n+0),#pagesNav {
   display: none !important;
 }
 
 /*Hide the right column*/
 #rightCol {
   display: none !important;
+}
+     
+/* Volets topbar */
+._50c9 {
+  -webkit-border-radius: 0 !important;
+}
+.notifNegativeBase .fbJewelFlyout, #tinymanNavWrapper .fbJewelFlyout
+ -webkit-border-radius: 0 !important;
 }
 
 /*Adjust content after hiding the right column*/
@@ -81,17 +106,62 @@ html ._5vb_._5vb_.hasLeftCol .hasRightCol div#contentArea {
   border-radius:0 !important;
 }
 
-/*Making the profile picture bigger*/
-._5bfg #pageNav .navLink, ._5bfg #pageNav .navItem .navLink {
-  margin-top: -7px !important;
+/* Séparation active */
+._55bh:after {background: #324679;}
+/*#navPrivacy ._8-a {margin-top: 3px;}
+.hasSmurfbar #pageNav ._4z6w#navAccount {margin-top: 6px;}*/
+
+/* Colonne de gauche */
+#leftCol {display: none !important;}
+
+/* Anti-dégradé timbre-postal */
+._5q5b .fbNubFlyoutTitlebar {background: #4b67a8;}
+
+/*Ombre boutons Messagerie */
+.uiButtonGroup {
+	-webkit-box-shadow: none;
 }
-._5bfg #pageNav._5bfj .tinyman .navLink:after, ._5bfg #pageNav._5bfj .tinyman .navLink:hover::after,._5bfg #pageNav._5bfj .tinyman .navLink:hover {
-  background-image:none !important;
+
+/*Bordure bleue Actions (Messagerie) */
+.uiSelector .uiMenu {
+     border-bottom: 1px solid #777;
 }
-.navItem.firstItem.tinyman.litestandNavItem > a {
-  background:transparent !important;
+
+/*Dégradé badge notifs Page */
+._5ugg, ._3z_5 {
+      background: #dc0d17 !important;
 }
-#pageNav._5bfj .tinyman .headerTinymanPhoto {
-  width: 30px !important;
-  height: 30px !important;
+._5ugg {
+	 -webkit-border-radius: 0 !important;
+      border-bottom: 1px solid;
 }
+  
+/*Dégradé badge "Boite de réception" Page */
+._5hl1 {
+  	  -webkit-border-radius: 0 !important;
+      -webkit-box-shadow: none;
+}
+
+/* Ombre bouton Historique personnel */
+._97 {
+    -webkit-box-shadow: none;
+}
+
+/* Bords publications */
+._4-u2 {
+   -webkit-border-radius: 0 !important;
+}
+
+/*Bouton interactions Page flat */
+._4jy0, ._59pe:focus, ._59pe:hover {
+  	background: white;
+    -webkit-border-radius: 0 !important;
+	-webkit-box-shadow: none;
+}
+
+/*Bouton "Stimuler cette publication" flat */
+.uiButton, .uiButtonSuppressed:active, .uiButtonSuppressed:focus, .uiButtonSuppressed:hover {
+  -webkit-box-shadow: none;
+  -webkit-border-radius: 0
+}
+
