@@ -27,6 +27,13 @@ ul.uiSideNav > li:nth-of-type(1n+3){
   display: none !important;
 }
 
+/* Trying to remove suggested pages */
+div[data-ft*=ei] {
+  display:none;
+}
+
+/* *** TOPBAR *** */
+
 /* Removes the Home/Me/Find Friends menu in topbar */
 ._55bj, ._56lq { 
   display:none !important;
@@ -36,9 +43,17 @@ ul.uiSideNav > li:nth-of-type(1n+3){
   text-transform: uppercase;
   margin-top: 2px !important;
 }
-._55bh:after {
-    background: none !important;
+._2dpe:after, ._2dpe:hover::after {
+    background-image: none !important;
 }
+._2dpc {
+    margin: 0 !important;
+    width: 30px !important;
+    height: 30px !important;
+}
+/* ._55bh:after {
+    background: none !important;
+} */
 
 /* Show only you profile pic in topbar - Hide your own name*/
 ._2dpb {
@@ -48,22 +63,24 @@ ul.uiSideNav > li:nth-of-type(1n+3){
     margin-right: 0 !important;
     padding-right: 4px !important;
 }
-
-/* Trying to remove suggested pages */
-div[data-ft*=ei] {
-  display:none;
+._3zm-._4fn6:hover, ._3zm-._4fn6:hover a{
+    background: transparent;
 }
 
 /*White background for content*/
 body, ._5vb_, ._5vb_ #contentCol {
-  background-color:white !important;
+  background-color: #F9FAFB !important;
 }
 
 /*Preserve timeline background*/
 body.timelineLayout {
-  background-color: #e7ebf2 !important;
+  background-color: #F9FAFB !important;
 }
- 
+
+html ._4lh, ._4lh .fbTimelineTimePeriod, ._4lh .fbTimelineSectionExpandPager .uiMorePagerLoader, ._4lh .fbTimelineCapsule li.anchorUnit:last-child, ._4lh .fbTimelineSectionLoading .loadingIndicator, ._4lh .lifeEventAddPhoto:hover {
+    background-color: #F9FAFB !important;
+}
+
 /* Flat badges */
 .jewelCount ._5ugg, .jewelCount ._3z_5, ._5q5b ._51jx {
   background: #dc0d17 !important;
@@ -101,6 +118,7 @@ body.timelineLayout {
 /* Rounded Avatar in chat list */
 ._55lt img {
     border-radius: 100px;
+    border: 1px solid #fff!important
 }
 ._56p9:after {
     border: none;
@@ -125,16 +143,56 @@ html ._5vb_._5vb_.hasLeftCol .hasRightCol div#contentArea {
   width: 99.4%;
 }
 
+/* bigger images */
+._6m5 {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* center embedded imgs */
+._5v3q ._4-eo, embed {
+    margin-top: 25px !important;
+    margin-bottom: 25px !important;
+    border: 0 !important;
+    position: relative !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    left: 0 !important;
+    right: 0 !important;
+}
+._5vb_ ._5aqh {
+    margin-left: 19% !important;
+}
+
+/* Center videos and photos gallery */
+._5mly, ._2a2q {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* No border around videos */
+._5vb_.webkit ._4_w4:hover {
+    box-shadow: 0 0 0 1.5px rgba(0, 0, 0, .15) inset, 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+/* Uncomment to add shadow below embedded imgs */
+/*._5v3q ._4-eo {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .41);
+}*/
+
 /*Flat Post buttons*/
 ._4jy1, ._4jy1._42fr:active, ._4jy1._42fr._42fs {
   background:#4e69a2 !important;
   border-radius:0 !important;
 }
 
+/* no box-shadow on "switch page" post button focus */
+html ._4jy0:focus {
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+}
+
 /* Séparation active */
 ._55bh:after {background: #324679;}
-/*#navPrivacy ._8-a {margin-top: 3px;}
-.hasSmurfbar #pageNav ._4z6w#navAccount {margin-top: 6px;}*/
 
 /* Colonne de gauche - Uncomment to hide the left column*/
 /*.hasLeftCol #leftCol {display: none !important;}*/
@@ -190,3 +248,69 @@ html ._5vb_._5vb_.hasLeftCol .hasRightCol div#contentArea {
   -webkit-border-radius: 0
 }
 
+/* *** Styling chat sidebar *** */
+
+/* White background and custom "status dot" */
+._5bon ._568-+i,
+._5bon ._568-:empty+i {
+    padding: 0!important;
+    border-radius: 20px!important
+}
+._5bon ._568-+i,
+._5bon ._568-:empty+i,
+._5bon:empty {
+    border: 1px solid #fff!important
+}
+
+.fbChatSidebar {
+    background-color: #fff!important
+}
+
+._55ln:focus, ._55ln:hover, li.selected ._55ln {
+    background-color: #E4E7EC;
+}
+
+._5bon ._568-+i,
+._5bon ._568-:empty+i,
+._5bon:empty {
+    background-size: 12px 11px!important
+}
+
+.fbChatSidebar .fbChatOrderedList ._5bon ._568- {
+    display: none!important
+}
+._5bon ._568-+i,
+._5bon ._568-:empty+i {
+	height: 10px!important;
+    width: 10px!important;
+}
+.fbChatSidebar .fbChatOrderedList ._5bon {
+    /* Change status dot position */
+    position: absolute!important;
+    left: 8px!important;
+    top: -2px!important;
+    line-height: normal!important;
+    margin: 0!important;
+    border-radius: 20px!important;
+    height: 10px!important;
+    width: 10px!important;
+}
+._5bon:empty {
+    background-color: #999!important
+}
+._5bon ._568-+i {
+    margin: 0!important;
+    background-color: #50657e!important
+}
+._5bon ._568-:empty+i {
+    margin: 0!important;
+    background-color: #72aa19!important
+}
+
+/* Align text and icon in chat search */
+.fbChatSidebar ._5q88.fbChatTypeahead .textInput {
+    padding-left: 30px!important
+}
+.fbChatTypeahead ._7am {
+    top: 6px;
+}
