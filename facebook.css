@@ -1,3 +1,5 @@
+/* **** SIDEBARS *** */
+
 /* Hides Sponsored stuff */
 div#pagelet_ego_pane {
   display:none !important;
@@ -9,13 +11,42 @@ div#pagelet_ego_pane {
 }
 
 /* Hide useless stuff in the left sidebar */
-#appsNav, #listsNav, #interestsNav {
- display:none !important;
+#appsNav, #listsNav, #interestsNav, #userNav, #pagesNav, #groupsNav, #eventsNav, #pinnedNav .navHeader {
+ display: none !important;
+}
+
+/*Hide some links in the "Fav" part of the sidebar - Change (1n+3) to show more or less link
+USE THE OPTIONS OF THE NAV MENU
+ul.uiSideNav > li:nth-of-type(1n+3){
+  display: none !important;
+}
+*/
+
+/*Hide the right column*/
+#rightCol {
+  display: none !important;
 }
 
 /* Removes the Home/Me/Find Friends menu in topbar */
-._2pdh, ._3zm- {
+._55bj, ._56lq { 
   display:none !important;
+}
+._2pdh { 
+  display: block !important;
+  text-transform: uppercase;
+  margin-top: 2px !important;
+}
+._55bh:after {
+    background: none !important;
+}
+
+/* Show only you profile pic in topbar - Hide your own name*/
+._2dpb {
+  display:none !important;
+}
+._3zm-._4fn6, ._3zm-._4fn6 a {
+    margin-right: 0 !important;
+    padding-right: 4px !important;
 }
 
 /* Trying to remove suggested pages */
@@ -62,30 +93,24 @@ body.timelineLayout {
 }
 
 /*Blocky search bar */
-._585-[role="search"] {
-  border-radius: 0 !important;
+/*._585-[role="search"] NE fonctionne plus*/
+.__wu ._539-.roundedBox.reDesignedSearchBox .uiTypeahead {
+    border-radius: 0px;
 }
 
-/* Hide your own name in sidebar */
-._2dpb {
-  display:none !important;
+/* Rounded Avatar in chat list */
+._55lt img {
+    border-radius: 100px;
 }
-
-/*Hide anything but News Feed and Messages in the sidbar */
-ul.uiSideNav > li:nth-of-type(1n+0),#pagesNav {
-  display: none !important;
-}
-
-/*Hide the right column*/
-#rightCol {
-  display: none !important;
+._56p9:after {
+    border: none;
 }
      
 /* Volets topbar */
 ._50c9 {
   -webkit-border-radius: 0 !important;
 }
-.notifNegativeBase .fbJewelFlyout, #tinymanNavWrapper .fbJewelFlyout
+.notifNegativeBase .fbJewelFlyout, #tinymanNavWrapper .fbJewelFlyout {
  -webkit-border-radius: 0 !important;
 }
 
@@ -111,8 +136,8 @@ html ._5vb_._5vb_.hasLeftCol .hasRightCol div#contentArea {
 /*#navPrivacy ._8-a {margin-top: 3px;}
 .hasSmurfbar #pageNav ._4z6w#navAccount {margin-top: 6px;}*/
 
-/* Colonne de gauche */
-#leftCol {display: none !important;}
+/* Colonne de gauche - Uncomment to hide the left column*/
+/*.hasLeftCol #leftCol {display: none !important;}*/
 
 /* Anti-dégradé timbre-postal */
 ._5q5b .fbNubFlyoutTitlebar {background: #4b67a8;}
